@@ -1,0 +1,26 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/top_nav.ejs %>
+ 
+<main class="container">
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+  <% if (title == "About") {%>
+    <img class="profilepix"  src=<%= imgSrc %> alt="" />
+    <a target="_blank" href=<%=resume %>> click here to view my resume</a>
+  <% }%>
+  <%= content %>
+
+  <% if (title == "Project") {%>
+    <img class="proj1"  src=<%=imgSrc %> alt="" />
+    <a target="_blank" href=<%=estate %>> click here to view my first project estate </a>
+  <% }%>
+
+</main>
+
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+
+
+
