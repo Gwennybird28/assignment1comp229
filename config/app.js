@@ -4,19 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-//Database Setup
-// let mongoose = require('mongoose');
-// let DB = require('./db')
-
-// mongoose.connect(DB.URI, { useNewUrlParser: true, useUnifiedTopology: true });
-
-// let mongoDB = mongoose.connection;
-// mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
-// mongoDB.once('open', () => {
-//   console.log('Node.JS is successfully connected to MongoDB.')
-// });
-
-
 var indexRouter = require('../routes/index');
 var usersRouter = require('../routes/users');
 var productsRouter = require('../routes/products');
@@ -36,7 +23,6 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/products', productsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
