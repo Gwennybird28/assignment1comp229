@@ -4,16 +4,33 @@
  
 <main class="container">
   <h1><%= title %></h1>
-  <p>Welcome to <%= title %></p>
+
   <% if (title == "About") {%>
     <img class="profilepix"  src=<%= imgSrc %> alt="" />
     <a target="_blank" href=<%=resume %>> click here to view my resume</a>
   <% }%>
+  <% if (title == "Home") {%>
+    <img class="logoHome"  src=<%= imglogo %> alt="" />
+   
+  <% }%>
+  
   <%= content %>
 
   <% if (title == "Project") {%>
+  </br>
+  </br>
     <img class="proj1"  src=<%=imgSrc %> alt="" />
-    <a target="_blank" href=<%=estate %>> click here to view my first project estate </a>
+    <a target="_blank" href=<%=estate %>> click here to view my first project estate </a> 
+  </br>
+  </br>
+
+    <img class="proj2"  src=<%=todolistimg %> alt="" />
+    <a target="_blank" href=<%=todolist %>> click here to view my Second todolist project </a>
+
+  </br>
+  </br>
+    <img class="proj3"  src=<%=wordguessImg %> alt="" />
+    <a target="_blank" href=<%=wordguess %>> click here to view my Third project guess the word game </a>
   <% }%>
 
 </main>

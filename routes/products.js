@@ -80,6 +80,7 @@ let updatedProduct = Product ({
 "company": req.body.pname,
 "price": req.body.price
 });
+
 Product.updateOne({_id:id}, updatedProduct,(err) => {
     if(err){
         console.log(err);
@@ -92,7 +93,7 @@ Product.updateOne({_id:id}, updatedProduct,(err) => {
 //to delete documents from the collection 
 
 router.get('/delete/:id', (req,res,next) => {
-    let id = req.params.id;
+    let id = req.params.id; //getting the id from URL to use inside the function
     Product.remove({_id: id}, (err) => {
         if(err){
             console.log(err);

@@ -1,8 +1,21 @@
+.content 
+{
+background-color: #cec1e7;
+font-family: 'linked_nowextrabold';
+    src: url('../stylesheets/jehoo_creative_-_linked_now_extrabold-webfont.woff2') format('woff2'),
+         url('../stylesheets/jehoo_creative_-_linked_now_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .logo{
 width: 100px;
 border-radius: 50%;
+}
+.logoHome
+{
 
-
+    width: 200px;
 }
 
 .profilepix {
@@ -13,5 +26,36 @@ border-radius: 50%;
 .proj1
 {
     width: 300px;
+
+}
+
+.proj2
+{
+
+    width: 300px;
+
+}
+
+.proj3{
+    width: 300px;
+
+}
+
+.form1
+{
+width: 80%;
+margin: auto;
+}
+nav.navbar
+{
+background-color: lemonchiffon;
+}
+
+@font-face {
+    font-family: 'linked_nowextrabold';
+    src: url('../stylesheets/jehoo_creative_-_linked_now_extrabold-webfont.woff2') format('woff2'),
+         url('../stylesheets/jehoo_creative_-_linked_now_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
